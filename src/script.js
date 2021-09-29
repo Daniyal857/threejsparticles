@@ -42,9 +42,9 @@ const material = new THREE.PointsMaterial({
 
 const particlesMaterial = new THREE.PointsMaterial({
   size: 0.005,
-  //   map: cross,
-  transparent: true
-  //   color: 'blue',
+  map: cross,
+  transparent: true,
+  color: 'white'
   //   blending: THREE.AdditiveBlending
 });
 
@@ -127,8 +127,6 @@ document.addEventListener('mousemove', e => {
 const clock = new THREE.Clock();
 
 const tick = () => {
-  console.log('mousex', mouseX);
-  console.log('mousey', mouseY);
   const elapsedTime = clock.getElapsedTime();
 
   // Update objects
